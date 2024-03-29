@@ -1,6 +1,11 @@
 <h1> Проект по тестированию интернет-магазина "KazanExpress"</h1>
 
 > <a target="_blank" href="https://kazanexpress.ru/">Ссылка на сайт</a>
+----
+### Проект реализован с использованием:
+<img src="design/icons/python-original.svg" width="50"> <img src="design/icons/pytest.png" width="50"> <img src="design/icons/intellij_pycharm.png" width="50"> <img src="design/icons/selene.png" width="50"> <img src="design/icons/selenoid.png" width="50"> <img src="design/icons/jenkins.png" width="50"> <img src="design/icons/allure_report.png" width="50"> <img src="design/icons/allure_testops.png" width="50"> <img src="design/icons/tg.png" width="50"> <img src="design/icons/jira.png" width="50">
+
+----
 
 ### Особенности проекта
 
@@ -34,4 +39,10 @@ pytest .
 ```
 ----
 ### Удаленный запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_hw14/">Ссылка на проект в Jenkins</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/14hw_aozaki/">Ссылка на проект в Jenkins</a>
+#### Для запуска автотестов в Jenkins
+
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/LitresTestProject/">проект</a>
+2. Нажать кнопку `Build`
+3. Результат запуска сборки можно посмотреть в отчёте Allure
+
