@@ -56,5 +56,6 @@ pytest .
 ![This is an image](design/images/allure-testops.png)
 #### Нотификация в Telegram
 ![This is an image](design/images/бот.png)
-
+#### Видео прохождения теста
+![This is an video](design/images/video.mp4)
 
