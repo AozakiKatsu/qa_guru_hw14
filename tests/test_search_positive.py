@@ -1,13 +1,9 @@
-import allure
-from selene import browser, have
+from test_kazanexpress.pages.search_page import search_page
 
 
 def test_search_positive():
-    with allure.step('Открываем браузер на странице https://kazanexpress.ru/'):
-        browser.open('/')
+    search_page.open()
 
-    with allure.step('В поле поиска вводим поисковой запрос "Кастрюли"'):
-        browser.element('[data-test-id=input__search]').type('Кастрюли').press_enter()
+    search_page.fill_search_input()
 
-    with allure.step('Проверяем результат поиска (в тайтле поиска есть слово "Кастрюли и ковши"'):
-        browser.element('[data-test-id=text__title]').should(have.text('Кастрюли и ковши'))
+    search_page.check_search_results()

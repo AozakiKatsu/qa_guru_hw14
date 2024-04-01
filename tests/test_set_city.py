@@ -1,15 +1,10 @@
-import allure
-from selene import browser, have
+from test_kazanexpress.pages.city_page import city_page
 
 
 def test_set_city():
-    with allure.step('Открываем браузер на странице https://kazanexpress.ru/'):
-        browser.open('/')
+    city_page.open()
 
-    with allure.step('Кликаем на текущий город"'):
-        browser.element('[data-test-id=button__select-city]').click()
-    with allure.step('Выбираем город "Воронеж"'):
-        browser.all('[data-test-id=list__city]').element_by(have.text('Воронеж')).click()
+    city_page.click_set_city()
+    city_page.choose_city()
 
-    with allure.step('Проверяем, что город поменялся на Воронеж'):
-        browser.element('[data-test-id=button__select-city]').should(have.text('Воронеж'))
+    city_page.check_selected_city()
